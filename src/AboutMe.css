@@ -1,0 +1,41 @@
+.aboutme-container {
+	margin-left: 4rem;
+	margin-right: 4rem;
+	/* background: linear-gradient(to bottom, #3dcaf577 0%, #5d90a075 100%); */
+	border: 0.1rem solid #586e75;
+	margin-top: 2rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	background: #ffffff;
+}
+
+.aboutme-container h2 {
+	margin: 0;
+	margin-top: 2rem;
+}
+
+.aboutme-container_content {
+	display: flex;
+}
+
+.aboutme-container_content p {
+	margin-top: 2.4rem;
+}
+
+.about-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	text-align: left;
+}
+
+.about-content p {
+	flex: 1;
+	margin: 0;
+}
+.aboutme-container_content img {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+}
