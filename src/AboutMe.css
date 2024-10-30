@@ -1,41 +1,112 @@
+.aboutme-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
 .aboutme-container {
-	margin-left: 4rem;
-	margin-right: 4rem;
-	/* background: linear-gradient(to bottom, #3dcaf577 0%, #5d90a075 100%); */
-	border: 0.1rem solid #586e75;
-	margin-top: 2rem;
+	margin-top: 6rem;
 	border-radius: 1rem;
-	padding: 1rem;
-	background: #ffffff;
+	width: 70%;
 }
 
 .aboutme-container h2 {
 	margin: 0;
-	margin-top: 2rem;
+	font-weight: 700;
 }
 
 .aboutme-container_content {
-	display: flex;
+	display: flex; /* Usar flexbox para alinear elementos en fila */
+	align-items: center; /* Centra verticalmente */
+	justify-content: flex-start; /* Alinea a la izquierda */
+	gap: 2rem; /* Espacio entre la imagen y el texto */
 }
 
 .aboutme-container_content p {
-	margin-top: 2.4rem;
+	text-align: justify;
 }
 
-.about-content {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	gap: 20px;
-	text-align: left;
-}
-
-.about-content p {
-	flex: 1;
-	margin: 0;
-}
 .aboutme-container_content img {
+	width: 320px;
+	height: 320px;
+	border-radius: 50%;
+}
+
+.education-container {
+	margin-left: 4rem;
+	margin-right: 4rem;
+	margin-top: 1rem;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.education-container_content {
+	display: flex;
+	flex-direction: column;
+}
+
+.education-container_content .education-container_content__item {
+	border-radius: 0.2rem;
+	background-color: #ffffff;
+	height: 3rem;
+	margin-top: 1rem;
+}
+.education-container_content .education-container_content__item p {
+	margin-left: 1rem;
+}
+
+.education-img img {
 	width: 250px;
 	height: 250px;
-	border-radius: 50%;
+}
+
+.aboutme-education {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 980px) {
+	/* .allcontainer {
+		display: flex;
+		flex-direction: column;
+	} */
+
+	.aboutme-wrapper {
+		margin-top: 24rem;
+	}
+
+	.aboutme-container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+	.education-container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
+
+	.aboutme-container h2 {
+		text-align: center;
+		margin-bottom: 1.6rem;
+	}
+
+	.aboutme-container_content p {
+		margin-right: 0;
+	}
+
+	.aboutme-container_content {
+		flex-direction: column;
+		align-items: center;
+	}
+	.education-container {
+		margin-top: 24rem;
+	}
+	.education-container_content .education-container_content__item {
+		height: 6.6rem;
+		margin-top: 1rem;
+	}
+	.education-container_content .education-container_content__item p {
+		margin-left: 1rem;
+	}
 }

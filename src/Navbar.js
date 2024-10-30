@@ -11,15 +11,18 @@ const Navbar = () => {
 	return (
 		<nav className="navbar">
 			<div className="navbar-logo">
-				<h1>Adán Gomez</h1>
+				<h1>Adan Gomez</h1>
 				<p>Ph.D Candidate in Cognitive Sciences</p>
 			</div>
 			<ul className="navbar-links">
 				<li>
-					<Link to="/">About me (add Education)</Link>
+					<Link to="/">About me</Link>
 				</li>
 				<li>
-					<Link to="/proyectos">Experience (research and teaching)</Link>
+					<Link to="/experience">Experience</Link>
+				</li>
+				<li>
+					<Link to="/grantsAndAwards">Grants and awards</Link>
 				</li>
 				<li>
 					<Link to="/projects">Projects</Link>
@@ -28,7 +31,7 @@ const Navbar = () => {
 					<Link to="/contacto">Contact</Link>
 				</li>
 			</ul>
-			<div class="nav-responsive" onClick={mostrarOcultarMenu}>
+			<div class="navbar-menu" onClick={mostrarOcultarMenu}>
 				<i class="fa-solid fa-bars"></i>
 			</div>
 		</nav>
