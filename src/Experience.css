@@ -1,24 +1,35 @@
-.research-container {
+/* .research-container {
 	margin-left: 4rem;
 	margin-right: 4rem;
-	border: 0.1rem solid #586e75;
 	margin-top: 6rem;
 	border-radius: 1rem;
 	padding: 1rem;
-	background: #ffffff;
+}
+.research-container h2 {
+	border-bottom: 2px solid #008f90;
 }
 
 .research-container_content .research {
-	background: #b6e1eb;
-	border: 0.1rem solid #586e75;
-	border-radius: 1rem;
+	border-radius: 0.2rem;
+	background-color: #ffffff;
+	height: 5rem;
 	margin-top: 1rem;
 }
 
-.research-container_content .research h3,
+.research-container_content .research h4,
 .research-container_content .research p {
 	margin-left: 1rem;
 	margin-right: 1rem;
+}
+
+.research-container_content .research h4 {
+	padding-top: 1rem;
+	margin-bottom: 0;
+}
+
+.research-container_content .research p {
+	margin-bottom: 0;
+	margin-top: 0;
 }
 
 .teaching-container {
@@ -50,6 +61,81 @@
 		margin-right: 1rem;
 		text-align: justify;
 	}
+	.teaching-container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		text-align: justify;
+	}
+} */
+
+.research-container {
+	margin-left: 4rem;
+	margin-right: 4rem;
+	margin-top: 6rem;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.research-container h2 {
+	border-bottom: 2px solid #008f90;
+}
+
+.research-container_content .research {
+	border-radius: 0.2rem;
+	background-color: #ffffff;
+	margin-top: 1rem;
+	overflow: hidden; /* Ocultar cualquier contenido que sobresalga durante la transición */
+}
+
+.research-container_content .research-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer; /* Hacer que el encabezado sea clickeable */
+	padding: 1rem;
+	background-color: #ffffff; /* Fondo de la cabecera */
+	border-radius: 0.2rem;
+}
+
+.research-container_content .research-header h4 {
+	margin: 0;
+}
+
+.research-container_content .toggle-icon {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.research-container_content .research-details {
+	padding: 1rem;
+	background-color: #ffffff;
+	border-top: 1px solid #008f90;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.5s ease-out;
+}
+
+.research-container_content .research-details.show {
+	max-height: 500px;
+}
+
+.teaching-container {
+	margin-left: 4rem;
+	margin-right: 4rem;
+	border: 0.1rem solid #586e75;
+	margin-top: 4rem;
+	border-radius: 1rem;
+	padding: 1rem;
+	background: #ffffff;
+}
+
+@media screen and (max-width: 980px) {
+	.research-container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		text-align: justify;
+	}
+
 	.teaching-container {
 		margin-left: 1rem;
 		margin-right: 1rem;

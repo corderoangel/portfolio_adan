@@ -52,7 +52,8 @@
 }
 
 .navbar-links a:hover {
-	background-color: #00c061;
+	background-color: #00908f;
+	color: #ffffff;
 	transform: scale(1); /* Aumenta el tamaño ligeramente en hover */
 }
 

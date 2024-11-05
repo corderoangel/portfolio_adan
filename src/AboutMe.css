@@ -41,6 +41,10 @@
 	padding: 1rem;
 }
 
+.education-container h2 {
+	border-bottom: 2px solid #008f90;
+}
+
 .education-container_content {
 	display: flex;
 	flex-direction: column;

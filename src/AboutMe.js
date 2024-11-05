@@ -11,15 +11,10 @@ const AboutMe = () => {
 						<div className="aboutme-description">
 							<h2>About me</h2>
 							<p>
-								I am a Ph.D. candidate in cognitive science at Rensselaer Polytechnic Institute (RPI), pursuing cutting-edge research in cognitive architectures, AI, and computational
-								modeling. My dissertation work advances self-control mechanisms from a rational perspective within the Clarion cognitive architecture. <br />
-								<br />
-								With over nine years of experience as a faculty member and researcher at EdutLan Lab in Universidad de Córdoba in Colombia, I have deep specialized knowledge in
-								intelligent systems and using computational models for education. In EdutLan Lab, I spearheaded cognitive modeling efforts as the Area Coordinator. That work led to the
-								co-creating of the CARINA metacognitive architecture, formalizing how agents monitor and control their cognition. <br />
-								<br />
-								Currently, I actively collaborate with Dr. Ron Sun at RPI’s CogArch Lab as part of my doctoral training to deepen my knowledge in cognitive modeling, cognitive
-								architectures, and machine learning, as well as mathematical and social psychology.
+								I’m a Ph.D. candidate in Cognitive Science at Rensselaer Polytechnic Institute (RPI), researching cognitive architectures, AI, and computational modeling. My work
+								focuses on self-control mechanisms within the Clarion cognitive architecture. With over nine years of experience as a researcher and faculty member at EdutLan Lab,
+								University of Córdoba, Colombia, I co-created the CARINA metacognitive architecture for agent cognition control. I currently collaborate with Dr. Ron Sun at RPI’s
+								CogArch Lab to further explore cognitive modeling, machine learning, and social psychology.
 							</p>
 						</div>
 					</div>
@@ -27,7 +22,7 @@ const AboutMe = () => {
 			</div>
 			<div className="education-container">
 				<h2>
-					Education <FaUniversity />
+					<FaUniversity /> Education
 				</h2>
 				<div className="education-container_content">
 					<div className="education-container_content__item">
