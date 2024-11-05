@@ -1,164 +1,6 @@
 import React, { useState } from "react";
 import "./Experience.css";
 
-// const Experience = () => {
-// 	// Estado para controlar si la descripción de una investigación está visible
-// 	const [isOpen, setIsOpen] = useState(null); // Guarda el índice de la investigación abierta
-
-// 	// Función para alternar la visibilidad de los detalles
-// 	const toggleDetails = (index) => {
-// 		setIsOpen(isOpen === index ? null : index); // Si ya está abierto, lo cierra, si no lo abre
-// 	};
-
-// 	// return (
-// 	// 	<div>
-// 	// 		<div className="research-container">
-// 	// 			<h2>Research experience</h2>
-// 	// 			<div className="research-container_content">
-// 	// 				<div className="research">
-// 	// 					<h4>Ph.D. Thesis</h4>
-// 	// 					<p>
-// 	// 						A Comprehensive Framework and a Mechanistic Model of Self-Control in Clarion Cognitive Architecture. (<em>In progress</em>)
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div className="research">
-// 	// 					<h4>Graduate Research Assistantship</h4>
-// 	// 					<p>
-// 	// 						Computational Modeling of Motivation and Cognition in CLARION Cognitive Architecture. (<em>2022</em>)
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div className="research">
-// 	// 					<h4>ITS Fichas y Protocolos en Salud</h4>
-// 	// 					<p>
-// 	// 						Intelligent Tutor System for learning the care protocol in the early detection of Gestational and Congenital Syphilis. (<em>2021-2022</em>)
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div className="research">
-// 	// 					<h4>Metacognitive Judgements in MIDCA</h4>
-// 	// 					<p>
-// 	// 						Formal Representation and Computational Implementation of Metacognitive Judgments Related to Goals Execution Time in MIDCA Cognitive Architecture. (<em>2019</em>)
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div className="research">
-// 	// 					<h4>ECHO</h4>
-// 	// 					<p>
-// 	// 						Autonomous system based on CARINA Cognitive Architecture for Frequently Asked Questions Systems, Open Question Assessment, and Translation from Guided Public Discussions to
-// 	// 						Sustainable Development Goals. (<em>2018-2019</em>)
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div className="research">
-// 	// 					<h4>CARINA Cognitive Architecture</h4>
-// 	// 					<p>
-// 	// 						Computational Modeling of Cognitive and Metacognitive processes for the Object level and Meta level of CARINA. (<em>2017-2019</em>)
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div className="research">
-// 	// 					<h4>NUMBOT</h4>
-// 	// 					<p>Educational Robotic Toy with visual-auditory recognition for the development of counting skills.</p>
-// 	// 					<p>
-// 	// 						<em>2015</em>
-// 	// 					</p>
-// 	// 				</div>
-// 	// 			</div>
-// 	// 		</div>
-
-// 	// 		<div class="teaching-container">
-// 	// 			<h2>Teaching experience</h2>
-// 	// 			<div class="teaching-container_content">
-// 	// 				<div class="teaching">
-// 	// 					<h3>Full-Time Faculty Member</h3>
-// 	// 					<p>University of Cordoba, Montería, Colombia.</p>
-// 	// 					<p>Educational Informatics Department.</p>
-// 	// 					<p>
-// 	// 						<em>2015-2024</em>
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div class="teaching">
-// 	// 					<h3>Half-Time Lecturer</h3>
-// 	// 					<p>University of Cordoba, Montería, Colombia.</p>
-// 	// 					<p>Educational Informatics Department – Computer Science Department.</p>
-// 	// 					<p>
-// 	// 						<em>2003 - 2014</em>
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div class="teaching">
-// 	// 					<h3>Full-Time Computer Science Teacher</h3>
-// 	// 					<p>Institución Educativa Cristóbal Colón, Montería, Colombia.</p>
-// 	// 					<p>
-// 	// 						<em>1999-2014</em>
-// 	// 					</p>
-// 	// 				</div>
-// 	// 				<div class="teaching">
-// 	// 					<h3>Full-Time Computer Science Teacher</h3>
-// 	// 					<p>Colegio Militar Almirante Colón, Montería, Colombia.</p>
-// 	// 					<p>
-// 	// 						<em>1995 - 1998</em>
-// 	// 					</p>
-// 	// 				</div>
-// 	// 			</div>
-// 	// 		</div>
-// 	// 	</div>
-// 	// );
-
-// 	return (
-// 		<div>
-// 			<div className="research-container">
-// 				<h2>Research experience</h2>
-// 				<div className="research-container_content">
-// 					{[
-// 						{
-// 							title: "Ph.D. Thesis",
-// 							description: "A Comprehensive Framework and a Mechanistic Model of Self-Control in Clarion Cognitive Architecture. (<em>In progress</em>)",
-// 						},
-// 						{
-// 							title: "Graduate Research Assistantship",
-// 							description: "Computational Modeling of Motivation and Cognition in CLARION Cognitive Architecture. (<em>2022</em>)",
-// 						},
-// 						{
-// 							title: "ITS Fichas y Protocolos en Salud",
-// 							description: "Intelligent Tutor System for learning the care protocol in the early detection of Gestational and Congenital Syphilis. (<em>2021-2022</em>)",
-// 						},
-// 						{
-// 							title: "Metacognitive Judgements in MIDCA",
-// 							description:
-// 								"Formal Representation and Computational Implementation of Metacognitive Judgments Related to Goals Execution Time in MIDCA Cognitive Architecture. (<em>2019</em>)",
-// 						},
-// 						{
-// 							title: "ECHO",
-// 							description:
-// 								"Autonomous system based on CARINA Cognitive Architecture for Frequently Asked Questions Systems, Open Question Assessment, and Translation from Guided Public Discussions to Sustainable Development Goals. (<em>2018-2019</em>)",
-// 						},
-// 						{
-// 							title: "CARINA Cognitive Architecture",
-// 							description: "Computational Modeling of Cognitive and Metacognitive processes for the Object level and Meta level of CARINA. (<em>2017-2019</em>)",
-// 						},
-// 						{
-// 							title: "NUMBOT",
-// 							description: "Educational Robotic Toy with visual-auditory recognition for the development of counting skills. (<em>2015</em>)",
-// 						},
-// 					].map((research, index) => (
-// 						<div key={index} className="research">
-// 							<div className="research-header" onClick={() => toggleDetails(index)}>
-// 								<h4>{research.title}</h4>
-// 								<span className="toggle-icon">{isOpen === index ? "−" : "+"}</span>
-// 							</div>
-// 							{isOpen === index && (
-// 								<div className="research-details">
-// 									<p>{research.description}</p>
-// 								</div>
-// 							)}
-// 						</div>
-// 					))}
-// 				</div>
-// 			</div>
-
-// 			<div className="teaching-container">
-// 				<h2>Teaching experience</h2>
-// 				<div className="teaching-container_content">{/* Aquí iría el mismo patrón si quisieras agregar una lista desplegable para teaching */}</div>
-// 			</div>
-// 		</div>
-// 	);
-// };
 const Experience = () => {
 	// Estado para controlar si la descripción de una investigación está visible
 	const [isOpen, setIsOpen] = useState(null); // Guarda el índice de la investigación abierta
@@ -184,30 +26,50 @@ const Experience = () => {
 							],
 						},
 						{
-							title: "Graduate Research Assistantship",
-							description: "Computational Modeling of Motivation and Cognition in CLARION Cognitive Architecture. (<em>2022</em>)",
+							title: "Graduate Research Assistantship: Computational Modeling of Motivation and Cognition in CLARION Cognitive Architecture. (2022)",
+							list: [
+								"Systematically analyzed scientific literature on self-control as an intra-physical conflict examining implicit and explicit information interaction patterns underlying human behavior.",
+								"Employed machine learning methods to model diverse human working memory tasks and their interaction with motivational aspects across two simulations built within the CLARION cognitive architecture.",
+								"Leveraged statistical techniques to analyze simulation data produced by the two CLARION-based models.",
+							],
 						},
 						{
-							title: "ITS Fichas y Protocolos en Salud",
-							description: "Intelligent Tutor System for learning the care protocol in the early detection of Gestational and Congenital Syphilis. (<em>2021-2022</em>)",
+							title: "ITS Fichas y Protocolos en Salud: Intelligent Tutor System for learning the care protocol in the early detection of Gestational and Congenital Syphilis. (2021-2022)",
+							list: [
+								"Engineered a case-based reasoning system and a recommender system for learning resources to personalize pedagogical strategies accounting for higher education students' learning styles and academic performance.",
+								"Authored a scientific publication for an education journal detailing the findings from contrasting the two systems in light of student academic performance.",
+							],
 						},
 						{
-							title: "Metacognitive Judgements in MIDCA",
-							description:
-								"Formal Representation and Computational Implementation of Metacognitive Judgments Related to Goals Execution Time in MIDCA Cognitive Architecture. (<em>2019</em>)",
+							title: "Metacognitive Judgements in MIDCA: Formal Representation and Computational Implementation of Metacognitive Judgments Related to Goals Execution Time in MIDCA Cognitive Architecture. (2019)",
+							list: [
+								"Designed and implemented predictive models for goal execution times within the MIDCA cognitive architecture to enable autonomous agents to generate accurate prospective, concurrent, and retrospective metacognitive appraisals.",
+								"Developed goal-oriented software agents capable of estimating completion times for specific tasks and goals in order to improve adaptations and time management using Python.",
+							],
 						},
 						{
-							title: "ECHO",
-							description:
-								"Autonomous system based on CARINA Cognitive Architecture for Frequently Asked Questions Systems, Open Question Assessment, and Translation from Guided Public Discussions to Sustainable Development Goals. (<em>2018-2019</em>)",
+							title: "ECHO: Autonomous system based on CARINA Cognitive Architecture for Frequently Asked Questions Systems, Open Question Assessment, and Translation from Guided Public Discussions to Sustainable Development Goals. (2018-2019)",
+							list: [
+								"Engineered the knowledge base of the system employing diverse knowledge representation techniques, including semantic networks and ontologies.",
+								"Composed a methodical review of the various computational approaches leveraged by the system.",
+							],
 						},
 						{
-							title: "CARINA Cognitive Architecture",
-							description: "Computational Modeling of Cognitive and Metacognitive processes for the Object level and Meta level of CARINA. (<em>2017-2019</em>)",
+							title: "CARINA Cognitive Architecture: Computational Modeling of Cognitive and Metacognitive processes for the Object level and Meta level of CARINA. (2017-2019)",
+							list: [
+								"Co-designed the cognitive architecture and information processing mechanisms for CARINA, an artificial cognitive framework capable of metacognitive control and introspective reasoning about its cognitive processes.",
+								"Implemented formal representations of cognitive models and introspective reasoning traces to enable CARINA agents to monitor and regulate their cognition.",
+								"Developed techniques for specifying and validating algorithmic knowledge profiles to empower CARINA agents to form metacognitive expectations about perceptual processes and cognitive functions.",
+								"Researched methods for the meta-modeling of pedagogical strategies to allow CARINA-based intelligent tutoring systems to select appropriate teaching approaches tailored to individual students.",
+							],
 						},
 						{
-							title: "NUMBOT",
-							description: "Educational Robotic Toy with visual-auditory recognition for the development of counting skills. (<em>2015</em>)",
+							title: "NUMBOT: Educational Robotic Toy with visual-auditory recognition for the development of counting skills. (2015)",
+							list: [
+								"Designed and led a mixed methods study utilizing interviews, verbal protocols, and quasi-experimental research to compare numerical knowledge acquisition between preschool students using a robot-based learning environment versus traditional materials.",
+								"Mentored young investigators in experimental research methodology, overseeing the design of pre/post assessments, data analysis, and reporting of findings related to the impact of an innovative robot learning system.",
+								"Spearheaded the conceptualization, design, programming, and testing of a novel robot learning companion with gesture/voice recognition capabilities to develop early math skills among preschool-aged children.",
+							],
 						},
 					].map((research, index) => (
 						<div key={index} className="research">

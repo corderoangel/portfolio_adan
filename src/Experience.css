@@ -1,73 +1,3 @@
-/* .research-container {
-	margin-left: 4rem;
-	margin-right: 4rem;
-	margin-top: 6rem;
-	border-radius: 1rem;
-	padding: 1rem;
-}
-.research-container h2 {
-	border-bottom: 2px solid #008f90;
-}
-
-.research-container_content .research {
-	border-radius: 0.2rem;
-	background-color: #ffffff;
-	height: 5rem;
-	margin-top: 1rem;
-}
-
-.research-container_content .research h4,
-.research-container_content .research p {
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-.research-container_content .research h4 {
-	padding-top: 1rem;
-	margin-bottom: 0;
-}
-
-.research-container_content .research p {
-	margin-bottom: 0;
-	margin-top: 0;
-}
-
-.teaching-container {
-	margin-left: 4rem;
-	margin-right: 4rem;
-	border: 0.1rem solid #586e75;
-	margin-top: 4rem;
-	border-radius: 1rem;
-	padding: 1rem;
-	background: #ffffff;
-}
-
-.teaching-container_content .teaching {
-	background: #b6e1eb;
-	border: 0.1rem solid #586e75;
-	border-radius: 1rem;
-	margin-top: 1rem;
-}
-
-.teaching-container_content .teaching h3,
-.teaching-container_content .teaching p {
-	margin-left: 1rem;
-	margin-right: 1rem;
-}
-
-@media screen and (max-width: 980px) {
-	.research-container {
-		margin-left: 1rem;
-		margin-right: 1rem;
-		text-align: justify;
-	}
-	.teaching-container {
-		margin-left: 1rem;
-		margin-right: 1rem;
-		text-align: justify;
-	}
-} */
-
 .research-container {
 	margin-left: 4rem;
 	margin-right: 4rem;
@@ -84,16 +14,16 @@
 	border-radius: 0.2rem;
 	background-color: #ffffff;
 	margin-top: 1rem;
-	overflow: hidden; /* Ocultar cualquier contenido que sobresalga durante la transición */
+	overflow: hidden;
 }
 
 .research-container_content .research-header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	cursor: pointer; /* Hacer que el encabezado sea clickeable */
+	cursor: pointer;
 	padding: 1rem;
-	background-color: #ffffff; /* Fondo de la cabecera */
+	background-color: #ffffff;
 	border-radius: 0.2rem;
 }
 
