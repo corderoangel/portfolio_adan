@@ -93,7 +93,57 @@ const Experience = () => {
 
 			<div className="teaching-container">
 				<h2>Teaching experience</h2>
-				<div className="teaching-container_content">{/* Aquí iría el mismo patrón si quisieras agregar una lista desplegable para teaching */}</div>
+				<div className="teaching-container_content">
+					{[
+						{
+							title: "Full-Time Faculty Member: University of Cordoba, Montería, Colombia - Educational Informatics Department. (2015-2024)",
+							list: [
+								"Introduction to Artificial Intelligence (undergraduate level)",
+								"Cognition and Computation (undergraduate level)",
+								"Cognitive Informatics (undergraduate level)",
+								"Computer Science Teaching Computer Didactics (undergraduate level)",
+								"High Impact Scientific Paper Writing Course (graduate level)",
+								"Education, Coexistence and Society (graduate level)",
+							],
+						},
+						{
+							title: "Half-Time Lecturer: University of Cordoba, Montería, Colombia - Educational Informatics Department – Computer Science Department. (2022)",
+							list: [
+								"Basic Computing (undergraduate level)",
+								"Introduction to Data Structures (undergraduate level)",
+								"Algorithms (undergraduate level)",
+								"Object-Oriented Design Programming (undergraduate level)",
+								"Computer Architecture (undergraduate level)",
+								"Programming Languages (undergraduate level)",
+								"Software Design and Implementation (undergraduate level)",
+							],
+						},
+						{
+							title: "Full-Time Computer Science Teacher: Institución Educativa Cristóbal Colón, Montería, Colombia. (2021-2022)",
+							list: ["Computer Science (high and middle school level)"],
+						},
+						{
+							title: "Full-Time Computer Science Teacher: Colegio Militar Almirante Colón, Montería, Colombia. (1995 - 1998)",
+							list: ["Computer Science (elementary school and kindergarten level)"],
+						},
+					].map((teach, index) => (
+						<div key={index} className="teach">
+							<div className="teach-header" onClick={() => toggleDetails(index)}>
+								<h4>{teach.title}</h4>
+								<span className="toggle-icon">{isOpen === index ? "−" : "+"}</span>
+							</div>
+							<div className={`teach-details ${isOpen === index ? "show" : ""}`}>
+								{teach.list && (
+									<ul>
+										{teach.list.map((item, i) => (
+											<li key={i}>{item}</li>
+										))}
+									</ul>
+								)}
+							</div>
+						</div>
+					))}
+				</div>
 			</div>
 		</div>
 	);
