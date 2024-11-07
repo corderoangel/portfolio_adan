@@ -2,12 +2,26 @@ import React, { useState } from "react";
 import "./Experience.css";
 
 const Experience = () => {
-	// Estado para controlar si la descripción de una investigación está visible
-	const [isOpen, setIsOpen] = useState(null); // Guarda el índice de la investigación abierta
+	// // Estado para controlar si la descripción de una investigación está visible
+	// const [isOpen, setIsOpen] = useState(null); // Guarda el índice de la investigación abierta
 
-	// Función para alternar la visibilidad de los detalles
-	const toggleDetails = (index) => {
-		setIsOpen(isOpen === index ? null : index); // Si ya está abierto, lo cierra, si no lo abre
+	// // Función para alternar la visibilidad de los detalles
+	// const toggleDetails = (index) => {
+	// 	setIsOpen(isOpen === index ? null : index); // Si ya está abierto, lo cierra, si no lo abre
+	// };
+
+	// Estado separado para controlar las secciones de investigación y enseñanza
+	const [openResearchIndex, setOpenResearchIndex] = useState(null);
+	const [openTeachIndex, setOpenTeachIndex] = useState(null);
+
+	// Función para alternar los detalles de la sección de investigación
+	const toggleResearchDetails = (index) => {
+		setOpenResearchIndex(openResearchIndex === index ? null : index);
+	};
+
+	// Función para alternar los detalles de la sección de enseñanza
+	const toggleTeachDetails = (index) => {
+		setOpenTeachIndex(openTeachIndex === index ? null : index);
 	};
 
 	return (
@@ -73,11 +87,11 @@ const Experience = () => {
 						},
 					].map((research, index) => (
 						<div key={index} className="research">
-							<div className="research-header" onClick={() => toggleDetails(index)}>
+							<div className="research-header" onClick={() => toggleResearchDetails(index)}>
 								<h4>{research.title}</h4>
-								<span className="toggle-icon">{isOpen === index ? "−" : "+"}</span>
+								<span className="toggle-icon">{openResearchIndex === index ? "−" : "+"}</span>
 							</div>
-							<div className={`research-details ${isOpen === index ? "show" : ""}`}>
+							<div className={`research-details ${openResearchIndex === index ? "show" : ""}`}>
 								{research.list && (
 									<ul>
 										{research.list.map((item, i) => (
@@ -128,11 +142,11 @@ const Experience = () => {
 						},
 					].map((teach, index) => (
 						<div key={index} className="teach">
-							<div className="teach-header" onClick={() => toggleDetails(index)}>
+							<div className="teach-header" onClick={() => toggleTeachDetails(index)}>
 								<h4>{teach.title}</h4>
-								<span className="toggle-icon">{isOpen === index ? "−" : "+"}</span>
+								<span className="toggle-icon">{openTeachIndex === index ? "−" : "+"}</span>
 							</div>
-							<div className={`teach-details ${isOpen === index ? "show" : ""}`}>
+							<div className={`teach-details ${openTeachIndex === index ? "show" : ""}`}>
 								{teach.list && (
 									<ul>
 										{teach.list.map((item, i) => (
