@@ -99,3 +99,15 @@
 .teaching-container_content .teach-details.show {
 	max-height: 500px;
 }
+
+@media screen and (max-width: 800px) {
+	.research-container,
+	.teaching-container {
+		/* margin-top: 6rem; */
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+	.teaching-container_content .teach-details.show ul {
+		padding-left: 1rem;
+	}
+}
