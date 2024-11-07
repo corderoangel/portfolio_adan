@@ -1,17 +1,20 @@
+/* Estilos para navbar */
 .navbar {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	background: #ffffff;
 	height: 4rem;
-	z-index: 1000; /* Asegura que esté por encima de otros elementos */
-	position: fixed; /* Fija el navbar en la parte superior */
-	top: 0; /* Mantiene en la parte superior */
-	width: 100%; /* Asegura que ocupe todo el ancho */
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .navbar-menu {
 	display: none;
+	cursor: pointer;
+	padding-right: 1rem;
 }
 
 .navbar-logo {
@@ -20,17 +23,9 @@
 	margin-top: 0.4rem;
 }
 
-.navbar-logo h1 {
-	text-align: center;
-	margin-bottom: 0;
-	margin-top: 0;
-}
-
+.navbar-logo h1,
 .navbar-logo p {
-	text-align: center;
 	margin: 0;
-	margin-top: 0.1rem;
-	margin-bottom: 0.4rem;
 }
 
 .navbar-links {
@@ -45,52 +40,150 @@
 .navbar-links a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
-	padding: 10px 15px; /* Agrega padding alrededor */
-	display: inline-block; /* Necesario para que el padding funcione correctamente */
-	transition: background-color 0.8s ease, transform 0.8s ease; /* Transición suave */
+	padding: 10px 15px;
+	display: inline-block;
+	transition: background-color 0.8s ease, transform 0.8s ease;
 	border-radius: 1rem;
 }
 
 .navbar-links a:hover {
 	background-color: #00908f;
 	color: #ffffff;
-	transform: scale(1); /* Aumenta el tamaño ligeramente en hover */
+	transform: scale(1.05);
 }
 
+/* Media query para pantallas pequeñas */
 @media screen and (max-width: 980px) {
-	.navbar-links {
-		display: none;
-	}
-	.navbar-menu {
-		display: block;
-		margin-right: 2rem;
-	}
 	.navbar {
 		justify-content: space-between;
-		margin-left: 0;
+		padding: 0 1rem;
 	}
 
-	.navbar-logo h1 {
-		margin-left: 2rem;
-	}
-
+	.navbar-logo h1,
 	.navbar-logo p {
-		margin-left: 2rem;
+		margin-left: 1rem;
 	}
 
-	nav.responsive {
-		display: block;
+	.navbar-links {
+		display: none;
 		position: absolute;
+		top: 3rem;
 		right: 0;
-		top: 75px;
-		background-color: #252a2e;
-		width: 180px;
+		background-color: #ffffff;
+		width: 30%;
+		flex-direction: column;
+		border-radius: 0.5rem;
+		padding: 1rem;
 	}
-	nav.responsive ul {
-		display: block !important;
+
+	.navbar-links.show {
+		display: flex;
 	}
-	nav.responsive ul li {
-		border-bottom: 1px solid #fff;
-		padding: 10px 0;
+
+	.navbar-links li {
+		margin: 10px 0;
+		border-bottom: 1px solid #00908f;
+	}
+	.navbar-links li a {
+		width: 100%;
+	}
+
+	.navbar-menu {
+		display: block;
+		font-size: 1.5rem;
+		margin-right: 1rem;
+		cursor: pointer;
+	}
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 590px) {
+	.navbar {
+		justify-content: space-between;
+		padding: 0 1rem;
+	}
+
+	.navbar-logo h1,
+	.navbar-logo p {
+		margin-left: 1rem;
+	}
+
+	.navbar-links {
+		display: none;
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		background-color: #ffffff79;
+		width: 100%;
+		flex-direction: column;
+		border-radius: 0.5rem;
+		padding: 1rem;
+	}
+
+	.navbar-links.show {
+		display: flex;
+	}
+
+	.navbar-links li {
+		margin: 10px 0;
+		border-bottom: 1px solid #00908f;
+		text-align: center;
+	}
+	.navbar-links li a {
+		width: 100%;
+	}
+
+	.navbar-menu {
+		display: block;
+		font-size: 1.5rem;
+		margin-right: 1rem;
+		cursor: pointer;
+	}
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 341px) {
+	.navbar {
+		justify-content: space-between;
+		padding: 0 1rem;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+
+	.navbar-logo h1,
+	.navbar-logo p {
+		margin-left: 1rem;
+	}
+
+	.navbar-links {
+		display: none;
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		background-color: #ffffff79;
+		width: 100%;
+		flex-direction: column;
+		border-radius: 0.5rem;
+		padding: 1rem;
+	}
+
+	.navbar-links.show {
+		display: flex;
+	}
+
+	.navbar-links li {
+		margin: 10px 0;
+		border-bottom: 1px solid #00908f;
+		text-align: center;
+	}
+	.navbar-links li a {
+		width: 100%;
+	}
+
+	.navbar-menu {
+		display: block;
+		font-size: 1.5rem;
+		margin-right: 1rem;
+		cursor: pointer;
 	}
 }

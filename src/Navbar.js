@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"; // Asegúrate de agregar estilos si es necesario
+import "./Navbar.css";
 
 const Navbar = () => {
-	const mostrarOcultarMenu = () => {
-		alert("¡Hola! Soy Adán Gomez, Ph.D Candidate in Cognitive Sciences.");
-		// Aquí puedes agregar cualquier otra lógica que desees
+	// Estado para controlar la visibilidad del menú en pantallas pequeñas
+	const [menuVisible, setMenuVisible] = useState(false);
+
+	const toggleMenu = () => {
+		setMenuVisible(!menuVisible);
 	};
 
 	return (
-		<nav className="navbar">
+		<nav className={`navbar ${menuVisible ? "responsive" : ""}`}>
 			<div className="navbar-logo">
 				<h1>Adan Gomez</h1>
 				<p>Ph.D Candidate in Cognitive Sciences</p>
 			</div>
-			<ul className="navbar-links">
+			<ul className={`navbar-links ${menuVisible ? "show" : ""}`}>
 				<li>
 					<Link to="/">About me</Link>
 				</li>
@@ -31,8 +33,8 @@ const Navbar = () => {
 					<Link to="/contacto">Contact</Link>
 				</li>
 			</ul>
-			<div class="navbar-menu" onClick={mostrarOcultarMenu}>
-				<i class="fa-solid fa-bars"></i>
+			<div className="navbar-menu" onClick={toggleMenu}>
+				<i className="fa-solid fa-bars"></i>
 			</div>
 		</nav>
 	);
