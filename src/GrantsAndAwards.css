@@ -1,33 +1,23 @@
 .grantsawards-container {
 	margin-left: 4rem;
 	margin-right: 4rem;
-	border: 0.1rem solid #586e75;
 	margin-top: 6rem;
 	border-radius: 1rem;
 	padding: 1rem;
-	background: #ffffff;
+}
+
+.grantsawards-container h2 {
+	border-bottom: 2px solid #008f90;
 }
 
 .grantsawards_items {
-	background: #b6e1eb;
+	background: #ffffff;
 	border: 0.1rem solid #586e75;
-	border-radius: 1rem;
+	border-radius: 0.2rem;
 	margin-top: 1rem;
 }
 
 .grantsawards_items p {
 	margin-left: 1rem;
 	margin-right: 1rem;
-}
-
-@media screen and (max-width: 980px) {
-	.grantsawards-container {
-		margin-left: 1rem;
-		margin-right: 1rem;
-		text-align: justify;
-	}
-	.grantsawards_items a {
-		word-wrap: break-word; /* Permite que las palabras largas se dividan */
-		overflow-wrap: break-word; /* Compatibilidad con navegadores más nuevos */
-	}
 }
