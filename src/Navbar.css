@@ -52,6 +52,16 @@
 	transform: scale(1.05);
 }
 
+@media screen and (max-width: 1012px) {
+	.navbar {
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+	}
+	.navbar-links li a {
+		padding: 0;
+	}
+}
+
 /* Media query para pantallas pequeñas */
 @media screen and (max-width: 980px) {
 	.navbar {
