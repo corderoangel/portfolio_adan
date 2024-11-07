@@ -103,7 +103,7 @@
 	}
 
 	.education-container_content .education-container_content__item {
-		height: 6rem;
+		height: 5rem;
 		margin-top: 1rem;
 		align-items: center;
 	}
@@ -134,11 +134,11 @@
 	}
 
 	.education-container {
-		margin-top: 16rem;
+		margin-top: 18rem;
 	}
 
 	.education-container_content .education-container_content__item {
-		height: 6.6rem;
+		/* height: 6.6rem; */
 		margin-top: 1rem;
 	}
 
