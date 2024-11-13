@@ -102,6 +102,56 @@
 	width: 100%;
 }
 
+/* Sección Contacto */
+.contact-container {
+	text-align: start;
+	margin-left: 4rem;
+	margin-right: 4rem;
+	margin-top: 1rem;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.contact-container h2 {
+	border-bottom: 2px solid #008f90;
+}
+
+.contact-container p {
+	margin-top: 1rem;
+}
+
+.contact-btn {
+	display: inline-block;
+	/* padding: 10px 20px; */
+	color: #ffffff;
+	background-color: #008f90;
+	text-decoration: none;
+	margin-top: 1rem;
+	transition: 0.3s;
+}
+
+.contact-email {
+	text-align: center;
+}
+
+.contact-redes {
+	display: flex;
+	justify-content: center; /* Centra los iconos horizontalmente */
+}
+
+.contact-redes a {
+	font-size: 2.6rem;
+	margin: 0.6rem;
+	padding-bottom: 1rem;
+	padding-top: 1rem;
+	fill: #333; /* Reemplaza con el color hexadecimal que desees */
+	text-decoration: none; /* Elimina el subrayado */
+}
+
+.contact-redes a:visited {
+	color: #333; /* El mismo color que el normal */
+}
+
 @media screen and (max-width: 980px) {
 	.aboutme-container {
 		width: 90%;
@@ -133,6 +183,12 @@
 
 	.education-container {
 		margin-top: 14rem;
+		margin-left: 0rem;
+		margin-right: 0rem;
+	}
+
+	.contact-container {
+		/* margin-top: 14rem; */
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}

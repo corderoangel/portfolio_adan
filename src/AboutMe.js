@@ -1,6 +1,7 @@
 import React from "react";
 import "./AboutMe.css";
-import { FaUniversity } from "react-icons/fa";
+import { FaUniversity, FaLinkedin, FaGithubSquare, FaResearchgate } from "react-icons/fa";
+import { FaGoogleScholar } from "react-icons/fa6";
 const AboutMe = () => {
 	// Define la función descargarCV
 	const descargarCV = () => {
@@ -49,6 +50,31 @@ const AboutMe = () => {
 					<div className="education-container_content__item">
 						<p>B.S. Information Technology and Audiovisual Media(October, 2001) - Universidad de Córdoba(Montería, Colombia)</p>
 					</div>
+				</div>
+			</div>
+			<div className="contact-container">
+				<h2>Contact</h2>
+				<p>Si deseas trabajar conmigo o saber más sobre mis proyectos, no dudes en contactarme:</p>
+
+				<div className="contact-email">
+					<a href="mailto:correo@gmail.com" class="contact-btn">
+						Enviar correo
+					</a>
+				</div>
+
+				<div className="contact-redes">
+					<a href="https://www.linkedin.com/in/adangomezs/">
+						<FaLinkedin />
+					</a>
+					<a href="#">
+						<FaGithubSquare />{" "}
+					</a>
+					<a href="#">
+						<FaResearchgate />{" "}
+					</a>
+					<a href="#">
+						<FaGoogleScholar />
+					</a>
 				</div>
 			</div>
 		</div>
