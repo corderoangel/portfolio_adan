@@ -14,20 +14,20 @@ const Navbar = () => {
 		<nav className={`navbar ${menuVisible ? "responsive" : ""}`}>
 			<div className="navbar-logo">
 				<h1>Adan Gomez</h1>
-				<p>Ph.D Candidate in Cognitive Sciences</p>
+				<p>Ph.D Candidate in Cognitive Science</p>
 			</div>
 			<ul className={`navbar-links ${menuVisible ? "show" : ""}`}>
 				<li>
-					<Link to="/">About me</Link>
+					<Link to="/">About Me</Link>
 				</li>
 				<li>
 					<Link to="/experience">Experience</Link>
 				</li>
 				<li>
-					<Link to="/grantsAndAwards">Grants and awards</Link>
+					<Link to="/publications">Publications</Link>
 				</li>
 				<li>
-					<Link to="/projects">Projects</Link>
+					<Link to="/softwares">Softwares</Link>
 				</li>
 				<li>
 					<Link to="/contacto">Contact</Link>

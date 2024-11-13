@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./Navbar";
 import AboutMe from "./AboutMe"; // Asegúrate de importar el componente
 import Experience from "./Experience";
-import GrantsAndAwards from "./GrantsAndAwards";
+import Publications from "./Publications";
 
 const App = () => {
 	return (
@@ -13,7 +13,7 @@ const App = () => {
 			<Routes>
 				<Route path="/" element={<AboutMe />} /> {/* Ruta para About Me */}
 				<Route path="/experience" element={<Experience />} />
-				<Route path="/grantsAndAwards" element={<GrantsAndAwards />} />
+				<Route path="/publications" element={<Publications />} />
 			</Routes>
 		</Router>
 	);

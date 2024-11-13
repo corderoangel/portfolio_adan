@@ -9,11 +9,11 @@ const AboutMe = () => {
 					<div className="aboutme-container_content">
 						<img src="./foto.jpg" alt="Pic for Adán Gomez" />
 						<div className="aboutme-description">
-							<h2>About me</h2>
+							<h2>About Me</h2>
 							<p>
 								I’m a Ph.D. candidate in Cognitive Science at Rensselaer Polytechnic Institute (RPI), researching cognitive architectures, AI, and computational modeling. My work
 								focuses on self-control mechanisms within the Clarion cognitive architecture. With over nine years of experience as a researcher and faculty member at EdutLan Lab,
-								University of Córdoba, Colombia, I co-created the CARINA metacognitive architecture for agent cognition control. I currently collaborate with Dr. Ron Sun at RPI’s
+								Universidad de Córdoba, Colombia, I co-created the CARINA metacognitive architecture for agent cognition control. I currently collaborate with Dr. Ron Sun at RPI’s
 								CogArch Lab to further explore cognitive modeling, machine learning, and social psychology.
 							</p>
 						</div>

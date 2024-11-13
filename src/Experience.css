@@ -31,6 +31,10 @@
 	margin: 0;
 }
 
+.research-container_content .research-header h4 span {
+	font-weight: 100;
+}
+
 .research-container_content .toggle-icon {
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -70,6 +74,10 @@
 	margin: 0;
 }
 
+.teaching-container_content .teach-header h4 span {
+	font-weight: 100;
+}
+
 .teaching-container_content .toggle-icon {
 	font-size: 1.5rem;
 	font-weight: bold;
@@ -102,6 +110,11 @@
 
 .research-container .research-details ul {
 	padding-top: 1rem;
+	padding-left: 1rem;
+}
+.teaching-container .teach-details ul {
+	padding-top: 1rem;
+	padding-left: 1rem;
 }
 
 @media screen and (max-width: 800px) {

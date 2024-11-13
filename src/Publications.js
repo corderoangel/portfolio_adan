@@ -1,10 +1,10 @@
 import React from "react";
-import "./GrantsAndAwards.css";
+import "./Publications.css";
 
-const grantsAndAwards = () => {
+const publications = () => {
 	return (
 		<div className="grantsawards-container">
-			<h2>GRANTS AND AWARDS</h2>
+			<h2>Publications</h2>
 			<div className="grantsawards-container_content">
 				<div class="grantsawards_items">
 					<p>
@@ -200,4 +200,4 @@ const grantsAndAwards = () => {
 	);
 };
 
-export default grantsAndAwards;
+export default publications;

@@ -55,6 +55,10 @@
 	background-color: #ffffff;
 	height: 3.6rem;
 	margin-top: 1rem;
+	border: 0.1rem solid #008f90;
+	display: flex; /* Agregar flex para usar alineación */
+	align-items: center; /* Alinear verticalmente el contenido */
+	padding: 0 1rem; /* Añadir espacio horizontal alrededor del texto, opcional */
 }
 .education-container_content .education-container_content__item p {
 	margin-left: 1rem;
