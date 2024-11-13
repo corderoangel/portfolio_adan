@@ -75,6 +75,33 @@
 	align-items: center;
 }
 
+.aboutme-description button {
+	cursor: pointer;
+	background-color: transparent;
+	border: 2px solid #333;
+	width: fit-content;
+	display: block;
+	margin: 20px auto;
+	padding: 10px 22px;
+	font-size: 16px;
+	color: #000000;
+	position: relative;
+	z-index: 10;
+}
+.aboutme-description button .overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: #008f90;
+	z-index: -1;
+	transition: 1s;
+}
+.aboutme-description button:hover .overlay {
+	width: 100%;
+}
+
 @media screen and (max-width: 980px) {
 	.aboutme-container {
 		width: 90%;
@@ -82,6 +109,10 @@
 }
 
 @media screen and (max-width: 800px) {
+	.aboutme-description button {
+		margin-bottom: 5rem;
+	}
+
 	.aboutme-container {
 		width: 90%;
 		margin-top: 20rem;

@@ -2,6 +2,16 @@ import React from "react";
 import "./AboutMe.css";
 import { FaUniversity } from "react-icons/fa";
 const AboutMe = () => {
+	// Define la función descargarCV
+	const descargarCV = () => {
+		const link = document.createElement("a");
+		link.href = "/adan_gomez_cv.pdf"; // Ruta al archivo PDF
+		link.download = "adan_gomez_cv.pdf"; // Nombre con el que se descargará
+		document.body.appendChild(link);
+		link.click();
+		document.body.removeChild(link);
+	};
+
 	return (
 		<div className="allcontainer">
 			<div className="aboutme-wrapper">
@@ -16,6 +26,11 @@ const AboutMe = () => {
 								Universidad de Córdoba, Colombia, I co-created the CARINA metacognitive architecture for agent cognition control. I currently collaborate with Dr. Ron Sun at RPI’s
 								CogArch Lab to further explore cognitive modeling, machine learning, and social psychology.
 							</p>
+							<button onClick={descargarCV}>
+								{/* <button> */}
+								Descargar CV <i className="fa-solid fa-download"></i>
+								<span className="overlay"></span>
+							</button>
 						</div>
 					</div>
 				</div>
