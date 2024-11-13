@@ -1,10 +1,13 @@
 import React from "react";
 import "./Publications.css";
+import { MdArticle } from "react-icons/md";
 
 const publications = () => {
 	return (
 		<div className="grantsawards-container">
-			<h2>Publications</h2>
+			<h2>
+				<MdArticle /> Publications
+			</h2>
 			<div className="grantsawards-container_content">
 				<div class="grantsawards_items">
 					<p>

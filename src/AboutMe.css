@@ -122,7 +122,7 @@
 
 .contact-btn {
 	display: inline-block;
-	/* padding: 10px 20px; */
+	padding: 0.8rem 1.8rem;
 	color: #ffffff;
 	background-color: #008f90;
 	text-decoration: none;
@@ -160,12 +160,12 @@
 
 @media screen and (max-width: 800px) {
 	.aboutme-description button {
-		margin-bottom: 5rem;
+		margin-bottom: 10rem;
 	}
 
 	.aboutme-container {
 		width: 90%;
-		margin-top: 20rem;
+		margin-top: 34rem;
 	}
 	.aboutme-container h2 {
 		text-align: center;
@@ -192,6 +192,9 @@
 		margin-left: 0rem;
 		margin-right: 0rem;
 	}
+	.education-container {
+		margin-top: 18rem;
+	}
 
 	.education-container_content .education-container_content__item {
 		height: 5rem;
@@ -207,7 +210,7 @@
 @media screen and (max-width: 341px) {
 	.aboutme-container {
 		width: 90%;
-		margin-top: 24rem;
+		/* margin-top: 3rem; */
 	}
 
 	.aboutme-container h2 {
@@ -225,7 +228,7 @@
 	}
 
 	.education-container {
-		margin-top: 18rem;
+		margin-top: 20rem;
 	}
 
 	.education-container_content .education-container_content__item {

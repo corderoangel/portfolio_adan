@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Experience.css";
+import { MdScreenSearchDesktop } from "react-icons/md";
+import { GiTeacher } from "react-icons/gi";
 
 const Experience = () => {
 	// // Estado para controlar si la descripción de una investigación está visible
@@ -27,7 +29,9 @@ const Experience = () => {
 	return (
 		<div>
 			<div className="research-container">
-				<h2>Research Experience</h2>
+				<h2>
+					<MdScreenSearchDesktop /> Research Experience
+				</h2>
 				<div className="research-container_content">
 					{[
 						{
@@ -116,7 +120,9 @@ const Experience = () => {
 			</div>
 
 			<div className="teaching-container">
-				<h2>Teaching Experience</h2>
+				<h2>
+					<GiTeacher /> Teaching Experience
+				</h2>
 				<div className="teaching-container_content">
 					{[
 						{

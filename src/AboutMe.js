@@ -2,6 +2,8 @@ import React from "react";
 import "./AboutMe.css";
 import { FaUniversity, FaLinkedin, FaGithubSquare, FaResearchgate } from "react-icons/fa";
 import { FaGoogleScholar } from "react-icons/fa6";
+import { MdContactMail } from "react-icons/md";
+
 const AboutMe = () => {
 	// Define la función descargarCV
 	const descargarCV = () => {
@@ -53,7 +55,9 @@ const AboutMe = () => {
 				</div>
 			</div>
 			<div className="contact-container">
-				<h2>Contact</h2>
+				<h2>
+					<MdContactMail /> Contact
+				</h2>
 				<p>Si deseas trabajar conmigo o saber más sobre mis proyectos, no dudes en contactarme:</p>
 
 				<div className="contact-email">
