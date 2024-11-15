@@ -4,14 +4,6 @@ import { MdScreenSearchDesktop } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
 
 const Experience = () => {
-	// // Estado para controlar si la descripción de una investigación está visible
-	// const [isOpen, setIsOpen] = useState(null); // Guarda el índice de la investigación abierta
-
-	// // Función para alternar la visibilidad de los detalles
-	// const toggleDetails = (index) => {
-	// 	setIsOpen(isOpen === index ? null : index); // Si ya está abierto, lo cierra, si no lo abre
-	// };
-
 	// Estado separado para controlar las secciones de investigación y enseñanza
 	const [openResearchIndex, setOpenResearchIndex] = useState(null);
 	const [openTeachIndex, setOpenTeachIndex] = useState(null);
