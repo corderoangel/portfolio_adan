@@ -169,6 +169,7 @@ const Experience = () => {
 								<span className="toggle-icon">{openTeachIndex === index ? "−" : "+"}</span>
 							</div>
 							<div className={`teach-details ${openTeachIndex === index ? "show" : ""}`}>
+								<p>Course taught:</p>
 								{teach.list && (
 									<ul>
 										{teach.list.map((item, i) => (

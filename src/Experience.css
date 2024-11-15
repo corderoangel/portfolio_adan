@@ -113,6 +113,10 @@
 	padding-left: 1rem;
 }
 .teaching-container .teach-details ul {
+	padding-top: 0.5rem;
+	padding-left: 1rem;
+}
+.teaching-container .teach-details p {
 	padding-top: 1rem;
 	padding-left: 1rem;
 }
