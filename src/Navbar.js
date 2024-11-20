@@ -10,6 +10,13 @@ const Navbar = () => {
 		setMenuVisible(!menuVisible);
 	};
 
+	const handleScrollToContact = () => {
+		const contactSection = document.getElementById("contact");
+		if (contactSection) {
+			contactSection.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
 	return (
 		<nav className={`navbar ${menuVisible ? "responsive" : ""}`}>
 			<div className="navbar-logo">
@@ -29,9 +36,11 @@ const Navbar = () => {
 				<li>
 					<Link to="/software">Software</Link>
 				</li>
-				<li>
-					<Link to="/contacto">Contact</Link>
-				</li>
+				{/* <li>
+					<Link to="#" onClick={handleScrollToContact}>
+						Contact
+					</Link>
+				</li> */}
 			</ul>
 			<div className="navbar-menu" onClick={toggleMenu}>
 				<i className="fa-solid fa-bars"></i>

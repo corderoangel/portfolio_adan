@@ -54,7 +54,7 @@ const AboutMe = () => {
 					</div>
 				</div>
 			</div>
-			<div className="contact-container">
+			<div className="contact-container" id="contact">
 				<h2>
 					<MdContactMail /> Contact
 				</h2>

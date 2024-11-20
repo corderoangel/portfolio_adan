@@ -121,6 +121,21 @@
 	padding-left: 1rem;
 }
 
+.grants_awards_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	padding: 1rem;
+	background-color: #ffffff;
+	border: 0.1rem solid #008f90;
+	border-radius: 0.2rem;
+}
+
+.grants_awards_header h4 span {
+	font-weight: 100;
+}
+
 @media screen and (max-width: 800px) {
 	.research-container,
 	.teaching-container {

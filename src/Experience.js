@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Experience.css";
 import { MdScreenSearchDesktop } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
+import { FaAward } from "react-icons/fa";
 
 const Experience = () => {
 	// Estado separado para controlar las secciones de investigación y enseñanza
@@ -162,6 +163,78 @@ const Experience = () => {
 							</div>
 							<div className={`teach-details ${openTeachIndex === index ? "show" : ""}`}>
 								<p>Course taught:</p>
+								{teach.list && (
+									<ul>
+										{teach.list.map((item, i) => (
+											<li key={i}>{item}</li>
+										))}
+									</ul>
+								)}
+							</div>
+						</div>
+					))}
+				</div>
+			</div>
+
+			<div className="teaching-container">
+				<h2>
+					<FaAward /> Grants and Awards
+				</h2>
+				<div className="teaching-container_content">
+					{[
+						{
+							title: "Fulbright Foreign Student Award:",
+							subtitle: "Rensselaer Polytechnic Institute, Troy, NY (2022)",
+						},
+						{
+							title: "Institutional Exaltation of Associate Researcher Category:",
+							subtitle: "Universidad de Córdoba, Montería, Colombia (2022)",
+						},
+						{
+							title: "Awarded the Fulbright Scholarship - Cohort 2021:",
+							subtitle: "Ministry of Science, Technology and Innovation of Colombia, Bogotá, Colombia (2020)",
+						},
+						{
+							title: "Best Paper Award:",
+							subtitle: "ISA 2020 The 5th International Conference on Intelligent, Interactive Systems and Applications. Shanghai, China (2020)",
+						},
+						{
+							title: "Short- Term Scholarship:",
+							subtitle: "Wright State University, Dayton, USA (2019)",
+						},
+						{
+							title: "Institutional Exaltation of Junior Researcher Category:",
+							subtitle: "Universidad de Córdoba, Montería, Colombia (2019)",
+						},
+						{
+							title: "Relevance and Impact of the Research Project:",
+							subtitle: "MILSET AMLAT, Medellín, Colombia (2014)",
+						},
+						{
+							title: "Colombian representation in the Feira de Ciência e Tecnologia Sul do Maranhão:",
+							subtitle: "Fundação Escola Técnica Liberato Salzano Vieira da Cunha, Novo Hamburgo, Brazil (2013)",
+						},
+						{
+							title: "Colombian representation in the International Science and Technology Exhibition MOSTRATEC 2013:",
+							subtitle: "Fundación Red Colombiana de Semilleros de Investigación RedColsi, Bucaramanga, Colombia (2012)",
+						},
+						{
+							title: "Winner III Classroom Projects Competition:",
+							subtitle: "Fundación Telefónica, Montería, Colombia (2012)",
+						},
+						{
+							title: "Award stimulus for Teachers and Teaching Directors:",
+							subtitle: "Municipal Education Secretariat. Montería, Colombia (2010)",
+						},
+					].map((teach, index) => (
+						<div key={index} className="teach">
+							<div className="grants_awards_header">
+								<h4>
+									{teach.title} <span>{teach.subtitle}</span>
+								</h4>
+								<span className="toggle-icon"></span>
+							</div>
+							<div>
 								{teach.list && (
 									<ul>
 										{teach.list.map((item, i) => (
