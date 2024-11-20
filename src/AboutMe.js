@@ -67,16 +67,16 @@ const AboutMe = () => {
 				</div>
 
 				<div className="contact-redes">
-					<a href="https://www.linkedin.com/in/adangomezs/">
+					<a href="https://www.linkedin.com/in/adangomezs/" target="_blank">
 						<FaLinkedin />
 					</a>
-					<a href="#">
+					<a href="https://github.com/adanalberto-git" target="_blank">
 						<FaGithubSquare />{" "}
 					</a>
-					<a href="#">
+					<a href="https://www.researchgate.net/lab/Adan-Gomez-Lab" target="_blank">
 						<FaResearchgate />{" "}
 					</a>
-					<a href="#">
+					<a href="https://scholar.google.com/citations?user=yANHEHgAAAAJ&hl=en" target="_blank">
 						<FaGoogleScholar />
 					</a>
 				</div>
