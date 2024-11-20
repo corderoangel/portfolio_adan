@@ -9,7 +9,7 @@ import Software from "./Software";
 
 const App = () => {
 	return (
-		<Router>
+		<>
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<AboutMe />} /> {/* Ruta para About Me */}
@@ -17,7 +17,7 @@ const App = () => {
 				<Route path="/publications" element={<Publications />} />
 				<Route path="/software" element={<Software />} />
 			</Routes>
-		</Router>
+		</>
 	);
 };
 
