@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/portfolio_adan/static/css/main.662a6e3e.css",
+    "main.js": "/portfolio_adan/static/js/main.51d87a55.js",
+    "index.html": "/portfolio_adan/index.html",
+    "main.662a6e3e.css.map": "/portfolio_adan/static/css/main.662a6e3e.css.map",
+    "main.51d87a55.js.map": "/portfolio_adan/static/js/main.51d87a55.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.662a6e3e.css",
+    "static/js/main.51d87a55.js"
+  ]
+}
