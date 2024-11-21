@@ -34,6 +34,17 @@
 	word-wrap: break-word;
 }
 
+.grantsawards_items p a {
+	color: #008f90;
+}
+.grantsawards_items p a:visited {
+	color: #008f90;
+}
+
+.grantsawards_items p span {
+	font-weight: bold;
+}
+
 @media screen and (max-width: 800px) {
 	.grantsawards-container {
 		margin-left: 0rem;

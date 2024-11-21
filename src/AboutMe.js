@@ -30,7 +30,7 @@ const AboutMe = () => {
 								CogArch Lab to further explore cognitive modeling, machine learning, and social psychology.
 							</p>
 							<button onClick={descargarCV}>
-								Descargar CV <i className="fa-solid fa-download"></i>
+								Download CV <i className="fa-solid fa-download"></i>
 								<span className="overlay"></span>
 							</button>
 						</div>

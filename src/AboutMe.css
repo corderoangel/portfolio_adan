@@ -144,7 +144,7 @@
 	margin: 0.6rem;
 	padding-bottom: 1rem;
 	padding-top: 1rem;
-	fill: #333; /* Reemplaza con el color hexadecimal que desees */
+	color: #333; /* Reemplaza con el color hexadecimal que desees */
 	text-decoration: none; /* Elimina el subrayado */
 }
 
