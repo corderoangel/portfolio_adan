@@ -8,7 +8,7 @@ const AboutMe = () => {
 	// Define la función descargarCV
 	const descargarCV = () => {
 		const link = document.createElement("a");
-		link.href = "/adan_gomez_cv.pdf"; // Ruta al archivo PDF
+		link.href = `${process.env.PUBLIC_URL}/adan_gomez_cv.pdf`; // Ruta al archivo PDF
 		link.download = "adan_gomez_cv.pdf"; // Nombre con el que se descargará
 		document.body.appendChild(link);
 		link.click();
@@ -57,11 +57,11 @@ const AboutMe = () => {
 				<h2>
 					<MdContactMail /> Contact
 				</h2>
-				<p>Si deseas trabajar conmigo o saber más sobre mis proyectos, no dudes en contactarme:</p>
+				<p>If you would like to collaborate with me or learn more about my projects, please feel free to reach out.</p>
 
 				<div className="contact-email">
 					<a href="mailto:correo@gmail.com" className="contact-btn">
-						Enviar correo
+						Send E-mail
 					</a>
 				</div>
 
@@ -72,7 +72,7 @@ const AboutMe = () => {
 					<a href="https://github.com/adanalberto-git" target="_blank" rel="noreferrer noopener">
 						<FaGithubSquare />{" "}
 					</a>
-					<a href="https://www.researchgate.net/lab/Adan-Gomez-Lab" target="_blank" rel="noreferrer noopener">
+					<a href="https://www.researchgate.net/profile/Adan-Gomez" target="_blank" rel="noreferrer noopener">
 						<FaResearchgate />{" "}
 					</a>
 					<a href="https://scholar.google.com/citations?user=yANHEHgAAAAJ&hl=en" target="_blank" rel="noreferrer noopener">
