@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/portfolio_adan/static/css/main.662a6e3e.css",
-    "main.js": "/portfolio_adan/static/js/main.96cb713d.js",
+    "main.css": "/portfolio_adan/static/css/main.48479ee4.css",
+    "main.js": "/portfolio_adan/static/js/main.a16883e9.js",
     "index.html": "/portfolio_adan/index.html",
-    "main.662a6e3e.css.map": "/portfolio_adan/static/css/main.662a6e3e.css.map",
-    "main.96cb713d.js.map": "/portfolio_adan/static/js/main.96cb713d.js.map"
+    "main.48479ee4.css.map": "/portfolio_adan/static/css/main.48479ee4.css.map",
+    "main.a16883e9.js.map": "/portfolio_adan/static/js/main.a16883e9.js.map"
   },
   "entrypoints": [
-    "static/css/main.662a6e3e.css",
-    "static/js/main.96cb713d.js"
+    "static/css/main.48479ee4.css",
+    "static/js/main.a16883e9.js"
   ]
 }
