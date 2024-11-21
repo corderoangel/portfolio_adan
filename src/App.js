@@ -1,6 +1,6 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter as Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Navbar from "./Navbar";
 import AboutMe from "./AboutMe"; // Asegúrate de importar el componente
 import Experience from "./Experience";
