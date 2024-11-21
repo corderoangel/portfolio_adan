@@ -20,7 +20,7 @@ const AboutMe = () => {
 			<div className="aboutme-wrapper">
 				<div className="aboutme-container">
 					<div className="aboutme-container_content">
-						<img src="./foto.jpg" alt="Pic for Adán Gomez" />
+						<img src={`${process.env.PUBLIC_URL}/foto.jpg`} alt="Pic for Adán Gomez" />
 						<div className="aboutme-description">
 							<h2>About Me</h2>
 							<p>
@@ -30,7 +30,6 @@ const AboutMe = () => {
 								CogArch Lab to further explore cognitive modeling, machine learning, and social psychology.
 							</p>
 							<button onClick={descargarCV}>
-								{/* <button> */}
 								Descargar CV <i className="fa-solid fa-download"></i>
 								<span className="overlay"></span>
 							</button>
@@ -61,22 +60,22 @@ const AboutMe = () => {
 				<p>Si deseas trabajar conmigo o saber más sobre mis proyectos, no dudes en contactarme:</p>
 
 				<div className="contact-email">
-					<a href="mailto:correo@gmail.com" class="contact-btn">
+					<a href="mailto:correo@gmail.com" className="contact-btn">
 						Enviar correo
 					</a>
 				</div>
 
 				<div className="contact-redes">
-					<a href="https://www.linkedin.com/in/adangomezs/" target="_blank">
+					<a href="https://www.linkedin.com/in/adangomezs/" target="_blank" rel="noreferrer noopener">
 						<FaLinkedin />
 					</a>
-					<a href="https://github.com/adanalberto-git" target="_blank">
+					<a href="https://github.com/adanalberto-git" target="_blank" rel="noreferrer noopener">
 						<FaGithubSquare />{" "}
 					</a>
-					<a href="https://www.researchgate.net/lab/Adan-Gomez-Lab" target="_blank">
+					<a href="https://www.researchgate.net/lab/Adan-Gomez-Lab" target="_blank" rel="noreferrer noopener">
 						<FaResearchgate />{" "}
 					</a>
-					<a href="https://scholar.google.com/citations?user=yANHEHgAAAAJ&hl=en" target="_blank">
+					<a href="https://scholar.google.com/citations?user=yANHEHgAAAAJ&hl=en" target="_blank" rel="noreferrer noopener">
 						<FaGoogleScholar />
 					</a>
 				</div>
