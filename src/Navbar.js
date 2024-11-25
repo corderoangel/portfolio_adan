@@ -10,12 +10,12 @@ const Navbar = () => {
 		setMenuVisible(!menuVisible);
 	};
 
-	const handleScrollToContact = () => {
-		const contactSection = document.getElementById("contact");
-		if (contactSection) {
-			contactSection.scrollIntoView({ behavior: "smooth" });
-		}
-	};
+	// const handleScrollToContact = () => {
+	// 	const contactSection = document.getElementById("contact");
+	// 	if (contactSection) {
+	// 		contactSection.scrollIntoView({ behavior: "smooth" });
+	// 	}
+	// };
 
 	return (
 		<nav className={`navbar ${menuVisible ? "responsive" : ""}`}>
@@ -25,16 +25,16 @@ const Navbar = () => {
 			</div>
 			<ul className={`navbar-links ${menuVisible ? "show" : ""}`}>
 				<li>
-					<Link to="/">About Me</Link>
+					<Link onClick={toggleMenu} to="/">About Me</Link>
 				</li>
 				<li>
-					<Link to="/experience">Experience</Link>
+					<Link onClick={toggleMenu} to="/experience">Experience</Link>
 				</li>
 				<li>
-					<Link to="/publications">Publications</Link>
+					<Link onClick={toggleMenu} to="/publications">Publications</Link>
 				</li>
 				<li>
-					<Link to="/software">Software</Link>
+					<Link onClick={toggleMenu} to="/software">Software</Link>
 				</li>
 				{/* <li>
 					<Link to="#" onClick={handleScrollToContact}>
