@@ -29,6 +29,10 @@
 	padding: 1rem;
 }
 
+.grantsawards_items:nth-last-child(1){
+	margin-bottom: 3rem;
+}
+
 .grantsawards_items p {
 	margin: 0;
 	word-wrap: break-word;

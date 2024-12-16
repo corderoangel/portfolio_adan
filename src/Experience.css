@@ -56,8 +56,13 @@
 .teaching-container_content .teach {
 	border-radius: 0.2rem;
 	background-color: #ffffff;
-	margin-top: 1rem;
 	overflow: hidden;
+	/* margin-bottom: 2rem; */
+	margin-top: 1rem;
+}
+
+.teaching-container_content .teach:nth-last-child(1){
+	margin-bottom: 3rem;
 }
 
 .teaching-container_content .teach-header {
