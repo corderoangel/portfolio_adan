@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import "./Software.css";
 import { FaLaptopCode } from "react-icons/fa6";
 
@@ -94,6 +95,7 @@ const Software = () => {
 					</a>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

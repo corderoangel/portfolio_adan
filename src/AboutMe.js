@@ -3,6 +3,7 @@ import "./AboutMe.css";
 import { FaUniversity, FaLinkedin, FaGithubSquare, FaResearchgate } from "react-icons/fa";
 import { FaGoogleScholar } from "react-icons/fa6";
 import { MdContactMail } from "react-icons/md";
+import Footer from "./Footer";
 
 const AboutMe = () => {
 	// Define la función descargarCV
@@ -80,6 +81,7 @@ const AboutMe = () => {
 					</a>
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

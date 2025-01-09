@@ -3,6 +3,7 @@ import "./Experience.css";
 import { MdScreenSearchDesktop } from "react-icons/md";
 import { GiTeacher } from "react-icons/gi";
 import { FaAward } from "react-icons/fa";
+import Footer from "./Footer";
 
 const Experience = () => {
 	// Estado separado para controlar las secciones de investigación y enseñanza
@@ -247,6 +248,7 @@ const Experience = () => {
 					))}
 				</div>
 			</div>
+			<Footer />
 		</div>
 	);
 };

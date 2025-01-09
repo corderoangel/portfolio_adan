@@ -132,11 +132,14 @@
 
 .contact-email {
 	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .contact-redes {
 	display: flex;
 	justify-content: center; /* Centra los iconos horizontalmente */
+	margin-bottom: 3rem;
 }
 
 .contact-redes a {
@@ -150,6 +153,10 @@
 
 .contact-redes a:visited {
 	color: #333; /* El mismo color que el normal */
+}
+
+.contact-redes a:hover{
+	color: #008f90;
 }
 
 @media screen and (max-width: 980px) {
